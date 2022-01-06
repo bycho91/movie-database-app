@@ -1,0 +1,19 @@
+@import '../../common/common.scss';
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+}
+
+.movie-image {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
